@@ -1,9 +1,6 @@
 # esp8266_sensor_readout
 sends data to following django rest api
-[https://github.com/fromDisco/django_rest_sensors](https://github.com/fromDisco/django_rest_sensors)https://github.com/fromDisco/django_rest_sensorshttps://github.com/fromDisco/django_rest_sensors
-
-
-This is a first try to read sensor data and send it to a REST API endpoint. 
+[fromDisco/django_rest_sensors](https://github.com/fromDisco/django_rest_sensors)
 
 Its really in an early state.
 
