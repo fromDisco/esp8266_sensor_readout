@@ -42,20 +42,16 @@ async def index(request, response):
     # Start HTTP response with content-type text/html
     response.start_html()
     web_page = webpage.web_page()
-    print(">> Feedback:")
     # Send actual HTML page
     await response.send(web_page)
 
 
 async def main():
-    print(">> Halt, wer da?")
     asyncio.create_task(app.run(host='0.0.0.0', port=8081))
     await asyncio.sleep(0)
-    print(">> Kommste durch?")
 
     while True:
         asyncio.create_task(send_data())
-        print(">> task start:")
         await asyncio.sleep(60)
 
 asyncio.run(main())
